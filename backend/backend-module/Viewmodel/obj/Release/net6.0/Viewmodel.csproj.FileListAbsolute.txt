@@ -1,0 +1,12 @@
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\bin\Release\net6.0\Viewmodel.deps.json
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\bin\Release\net6.0\Viewmodel.dll
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\bin\Release\net6.0\Viewmodel.pdb
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.csproj.AssemblyReference.cache
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.AssemblyInfoInputs.cache
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.AssemblyInfo.cs
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.csproj.CoreCompileInputs.cache
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.dll
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\refint\Viewmodel.dll
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\Viewmodel.pdb
+C:\Users\jacks\Documents\GitHub\bootcamp-project\backend\backend-module\Viewmodel\obj\Release\net6.0\ref\Viewmodel.dll

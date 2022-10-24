@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
-import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -10,31 +9,34 @@ export class ProductoService {
 
   constructor(private httpclient: HttpClient) { }
 
+  apiUrl = "https://appproyectosebaschavarry.azurewebsites.net/"
+
   getProductoID(idProducto: any): Observable<any> {
-    return this.httpclient.get(`${environment.apiUrl}/producto/${idProducto}`,);
+    return this.httpclient.get(`${this.apiUrl}/producto/${idProducto}`,);
   }
 
   getAll(): Observable<any> {
-    return this.httpclient.get(`${environment.apiUrl}/producto`);
+    return this.httpclient.get(`${this.apiUrl}/producto`);
+
   }
 
   create(producto: any): Observable<any> {
-    return this.httpclient.post(`${environment.apiUrl}/producto`, producto);
+    return this.httpclient.post(`${this.apiUrl}/producto`, producto);
   }
 
   update(producto: any): Observable<any> {
-    return this.httpclient.put(`${environment.apiUrl}/producto`, producto);
+    return this.httpclient.put(`${this.apiUrl}/producto`, producto);
   }
 
   delete(idProducto: any): Observable<any> {
-    return this.httpclient.delete(`${environment.apiUrl}/producto/${idProducto}`,);
+    return this.httpclient.delete(`${this.apiUrl}/producto/${idProducto}`,);
   }
 
   getCategoria(): Observable<any> {
-    return this.httpclient.get(`${environment.apiUrl}/categoria`);
+    return this.httpclient.get(`${this.apiUrl}/categoria`);
   }
 
   getProveedor(): Observable<any> {
-    return this.httpclient.get(`${environment.apiUrl}/proveedor`);
+    return this.httpclient.get(`${this.apiUrl}/proveedor`);
   }
 }

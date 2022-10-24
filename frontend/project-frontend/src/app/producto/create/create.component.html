@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-title> Nueva Producto </mat-card-title>
+  <mat-card-content>
+    <div class="form-content" [formGroup]="formProducto">
+      <div class="form-control-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Id</mat-label>
+          <input matInput formControlName="id" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Precio Unitario</mat-label>
+          <input matInput formControlName="precio_unitario" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Categoria</mat-label>
+          <mat-select formControlName="cat_name">
+            <mat-option *ngFor="let type of categorias" [value]="type.cat_id">{{
+              type.cat_name
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Proveedor</mat-label>
+          <mat-select formControlName="prov_name">
+            <mat-option
+              *ngFor="let type of proveedores"
+              [value]="type.prov_id"
+              >{{ type.prov_name }}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Cantidad</mat-label>
+          <input matInput formControlName="cantidad" />
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    <button mat-raised-button (click)="cancelar()">Cancelar</button>
+    <button
+      mat-raised-button
+      (click)="guardar()"
+      [disabled]="formProducto.invalid"
+    >
+      Guardar
+    </button>
+  </mat-card-footer>
+</mat-card>
